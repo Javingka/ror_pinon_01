@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre_autor: MyString
+  email_autor: MyString
+  sel_motor: 1
+  sel_motor_color: MyString
+  sel_asiento: 1
+  sel_rueda: 1
+  sel_llanta: 1
+  sel_llanta_color: MyString
+  sel_estanque: 1
+  sel_estanque_color: MyString
+  sel_escape: 1
+  sel_relog: 1
+  sel_tapabarro: 1
+  sel_tapabarro_color: MyString
+  sel_manijar: 1
+  nombre_moto: MyString
+
+two:
+  nombre_autor: MyString
+  email_autor: MyString
+  sel_motor: 1
+  sel_motor_color: MyString
+  sel_asiento: 1
+  sel_rueda: 1
+  sel_llanta: 1
+  sel_llanta_color: MyString
+  sel_estanque: 1
+  sel_estanque_color: MyString
+  sel_escape: 1
+  sel_relog: 1
+  sel_tapabarro: 1
+  sel_tapabarro_color: MyString
+  sel_manijar: 1
+  nombre_moto: MyString

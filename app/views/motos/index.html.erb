@@ -1,0 +1,12 @@
+
+<h1> Todas las motos. Galería visible </h1>
+
+<%= link_to "Nueva Moto", new_moto_path, class: "new_moto" %>
+
+<ul id="galeria_motos">
+  <% @motos.each do |moto| %>
+    <li>
+			<%= link_to moto.nombre_autor, moto_path(moto) %>
+    </li>
+  <% end %>
+</ul>
