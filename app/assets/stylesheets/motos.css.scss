@@ -2,47 +2,42 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import 'partialReset';
+@import 'partialWrapperCanvas';
 
 $primary-color: #333;
 $color-titulo-header: #fff;
+$radio-round: 20px;
+$width_logo: 30px;
 
+.container {
+}
 .header_fijo {
 	background-color: $primary-color;
+	height: $width_logo; 
 }
 
-#titulo_visible_app{
-	color: $color-titulo-header;
+.titulo_visible_app{
+	color: $primary-color;
 	text-align: center;
 }	
 
-/* AREA que determia el tamaño del canvas sobre el cual se pueden colocar otros elementos*/
-#canvas-wrap { 
-	position:relative;
-	margin-left:25%;
-	width: 50%;
-	min-width: 100px;
-	max-width: 500px;
-	background-color: #5e5; /* color verde claro*/
-	}
-#canvas-wrap:before{
-	content: "";
-	display: block;
-	padding-top: 100%; 	/* initial ratio of 1:1*/
+.contenido_central_app {
+	display:block;
 }
-#canvas_preview { 
-	position:absolute; 
-	background-color: #ee5;
-	width:90%;
-	height:90%;
-	top:0; 
-	left:0; 
-	z-index:0;
- }
 
  /* imagenes */
 .logo_header {
-  width: 3%; 
+	position: absolute;
+  display: inline;
+	width: $width_logo;
+ 	height: $width_logo;	
 	margin-left: 5px;
+}
+.texto_logo {
+	position: absolute;
+	display: inline;
+ 	margin-left: $width_logo*1.5;
+	margin-top: $width_logo*0.25;	
 }
 /* Links */
 a {
@@ -56,13 +51,34 @@ a:hover {
 a:visited {
 	color: #069;
 }
+/* Nueva Moto button */
+a.new_moto {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	text-align: center;
+	width: 20%;
+	background: #349bff;
+	color: #fff;
+	font-size: 150%;
+	font-weight: bold;
+	padding: 20px;
+}
+/* Round corners */
+.round {
+	-moz-border-radius:$radio-round;
+	-webkit-border-radius: $radio-round;
+	border-radius:$radio-round;
+}
 
 /* Navigation */
 nav {
 	float: right;
+	margin-top: $width_logo*0.127;	
 }
 nav {
-	background-color: white;
 	padding: 0 0.7em;
 	white-space: nowrap;
 }
@@ -90,7 +106,6 @@ nav ul li a:hover {
 footer {
 	text-align: center;
 	margin-top: 10px;
-	width: 710px;
 	margin-left: auto;
 	margin-right: auto;
 }

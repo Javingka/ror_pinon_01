@@ -12,4 +12,8 @@ class MotosController < ApplicationController
 		@moto = Moto.new
 	end
 
+	def edit
+		@moto = Moto.find(params[:id])
+	end
+
 end

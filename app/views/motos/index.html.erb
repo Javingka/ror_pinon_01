@@ -1,7 +1,8 @@
 
-<h1> Todas las motos. Galería visible </h1>
 
-<%= link_to "Nueva Moto", new_moto_path, class: "new_moto" %>
+<%= link_to "Crea tu moto", new_moto_path, :class => "new_moto round" %>
+
+<h1 class="titulo_visible_app"> Galeria de estilos de Piñon </h1>
 
 <ul id="galeria_motos">
   <% @motos.each do |moto| %>
@@ -10,3 +11,6 @@
     </li>
   <% end %>
 </ul>
+
+<h1 class="titulo_visible_app"> Galería de estilos de usuarios </h1>
+
