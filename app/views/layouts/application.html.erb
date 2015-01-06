@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>PinonApp01</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+	<head>
+  	<title>PinonApp01</title>
+  		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  		<%= csrf_meta_tags %>
+	</head>
 
-<%= yield %>
+	<body>
+		<div class="container">
+			<%= render 'layouts/header' %>
+			<section class="contenido_interno">
+					<%= yield %>
+			</section>
+			<%= render 'layouts/footer' %>
+		</div>
+		
 
-</body>
+	</body>
 </html>

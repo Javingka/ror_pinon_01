@@ -7,4 +7,9 @@ class MotosController < ApplicationController
 	def show
 		@moto = Moto.find(params[:id])
 	end
+
+	def new
+		@moto = Moto.new
+	end
+
 end

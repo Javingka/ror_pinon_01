@@ -1,3 +1,99 @@
 // Place all the styles related to the motos controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'partialReset';
+
+$primary-color: #333;
+$color-titulo-header: #fff;
+
+.header_fijo {
+	background-color: $primary-color;
+}
+
+#titulo_visible_app{
+	color: $color-titulo-header;
+	text-align: center;
+}	
+
+/* AREA que determia el tamaño del canvas sobre el cual se pueden colocar otros elementos*/
+#canvas-wrap { 
+	position:relative;
+	margin-left:25%;
+	width: 50%;
+	min-width: 100px;
+	max-width: 500px;
+	background-color: #5e5; /* color verde claro*/
+	}
+#canvas-wrap:before{
+	content: "";
+	display: block;
+	padding-top: 100%; 	/* initial ratio of 1:1*/
+}
+#canvas_preview { 
+	position:absolute; 
+	background-color: #ee5;
+	width:90%;
+	height:90%;
+	top:0; 
+	left:0; 
+	z-index:0;
+ }
+
+ /* imagenes */
+.logo_header {
+  width: 3%; 
+	margin-left: 5px;
+}
+/* Links */
+a {
+	color: #09c;
+	text-decoration: none;
+}
+a:hover {
+	color: #069;
+	text-decoration: underline;
+}
+a:visited {
+	color: #069;
+}
+
+/* Navigation */
+nav {
+	float: right;
+}
+nav {
+	background-color: white;
+	padding: 0 0.7em;
+	white-space: nowrap;
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+nav ul li {
+	list-style-type: none;
+	display: inline-block;
+	padding: 0.2em 0;
+}
+nav ul li a {
+	padding: 0 5px;
+	font-weight: bold;
+}
+nav ul li a:visited {
+	color: #09c;
+}
+nav ul li a:hover {
+	text-decoration: underline;
+}
+
+/* footer rules */
+footer {
+	text-align: center;
+	margin-top: 10px;
+	width: 710px;
+	margin-left: auto;
+	margin-right: auto;
+}
+footer nav {
+	float: none;
+}
