@@ -1,3 +1,11 @@
 <h1><%= @moto.nombre_autor %></h1>
 <p><%= @moto.ciudad %></p>
+
+
+<p>
+<% @moto.attributes.each do |att| %>
+				<%= " #{att[0]} : #{att[1]} " %><br/>
+<% end %>
+</p>
+
 <%= link_to "<< Vuelve a galeria de motos", motos_path %>
