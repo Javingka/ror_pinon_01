@@ -14,7 +14,7 @@ class MotosController < ApplicationController
 
 		respond_to do |format|
       format.html #new.html.erb
-      format.json { render json: @product}
+      format.json { render json: @moto}
     end
 	end
 	
@@ -23,8 +23,10 @@ class MotosController < ApplicationController
 
     respond_to do |format|
       if @moto.save
-        format.html { redirect_to @moto, notice: "Save process completed!" }
-        format.json { render json: @moto, status: :created, location: @moto}
+#				puts "format: "+format.class.name
+        format.html { redirect_to @moto, format: :html, notice: "Save process completed!" }
+#        format.json { render json: @moto, status: :created, location: @moto }
+#				redirect_to [:edit, @moto]
       else
         format.html { 
           flash.now[:notice]="Save proccess coudn't be completed!" 

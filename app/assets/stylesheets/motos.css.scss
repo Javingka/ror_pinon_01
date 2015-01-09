@@ -1,7 +1,7 @@
 // Place all the styles related to the motos controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-@import 'partialReset';
+@import 'partialReset';   //sass permite el uso de partials, que descongestionan este archivo y lo hacen más fácil de leer
 @import 'partialWrapperCanvas';
 
 $primary-color: #333;
