@@ -16,6 +16,7 @@ class MotosController < ApplicationController
       format.html #new.html.erb
       format.json { render json: @moto}
     end
+
 	end
 	
 	def create
