@@ -25,7 +25,7 @@ class MotosController < ApplicationController
     respond_to do |format|
       if @moto.save
 #				puts "format: "+format.class.name
-        format.html { redirect_to @moto, format: :html, notice: "Save process completed!" }
+        format.html { redirect_to [:edit, @moto], format: :html, notice: "Save process completed!" }
 #        format.json { render json: @moto, status: :created, location: @moto }
 #				redirect_to [:edit, @moto]
       else

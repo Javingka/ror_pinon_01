@@ -1,19 +1,27 @@
 ready = ->
 
-	$("#new_moto_op_1").click ->
-		$(this).css('background-color', 'green')
-		$('#form_new_moto_a #moto_nombre_autor').val("nombre_test_A")
-		
-	$("#new_moto_op_2").click ->
-		$(this).css('background-color', 'green')
-		$('#form_new_moto_b #moto_nombre_autor').val("nombre_test_B")
-
-	$("#new_moto_op_3").click ->
-		$(this).css('background-color', 'green')
-		$('#moto_nombre_autor').val("nombre_test_C")
+	divChoosePinonStyle()
+	divChooseColor()
+	divChooseFromScratch()
 
 $(document).ready(ready)
 $(document).on('page:load', ready)
+
+
+divChoosePinonStyle = ->
+	$("#new_moto_op_1").click ->
+		$(this).css('background-color', 'green')
+		$('#form_a_new_moto #moto_nombre_autor').val("nombre_test_A")
+
+divChooseColor = ->
+	$("#new_moto_op_2").click ->
+		$(this).css('background-color', 'green')
+		$('#form_b_new_moto #moto_nombre_autor').val("nombre_test_B")
+
+divChooseFromScratch = ->
+	$("#new_moto_op_3").click ->
+		$(this).css('background-color', 'green')
+		$('#form_c_new_moto #moto_nombre_autor').val("nombre_test_C") #partial de formulario c, o Id tiene el mismo nombre que el parcial 
 
 ###
 $.ajax({

@@ -1,7 +1,7 @@
 
-		<%= form_for (@moto), :html => {:id => "form_new_moto_b"} do |f| %>
+		<%= form_for (@moto), :html => {:id => "form_b_new_moto"} do |f| %>
 			<p>	<%= f.hidden_field :nombre_autor %>	</p>
 			<p>
-				<%= f.submit "Ok" %>
+				<%= f.submit "Ok" , :class => "form_submit" %>
 			</p>
 		<% end %>

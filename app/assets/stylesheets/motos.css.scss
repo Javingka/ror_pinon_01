@@ -16,11 +16,20 @@ $width_logo: 30px;
 	height: $width_logo; 
 }
 
-.titulo_visible_app{
+.texto_cuadro_eleccion_nueva_moto{
+	margin-bottom:5px;
 	color: $primary-color;
 	text-align: center;
 }	
 
+/* boton para enviar el formulario de nueva moto */
+.form_submit{
+	margin-top: 20px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
 .contenido_central_app {
 	display:block;
 }
