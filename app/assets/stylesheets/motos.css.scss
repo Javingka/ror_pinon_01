@@ -22,6 +22,11 @@ $width_logo: 30px;
 	text-align: center;
 }	
 
+.button_left{
+	position:absolute;
+	width:20%;
+	z-index:10;
+}
 /* boton para enviar el formulario de nueva moto */
 .form_submit{
 	margin-top: 20px;

@@ -1,4 +1,5 @@
 ready = ->
+	adjustSelectionDivSize()
 
 	divChoosePinonStyle()
 	divChooseColor()
@@ -7,6 +8,9 @@ ready = ->
 $(document).ready(ready)
 $(document).on('page:load', ready)
 
+adjustSelectionDivSize = ->
+	cw = $('.canvas-wrap-20').width()
+	$('.canvas-wrap-20').css({'height':cw+'px'})
 
 divChoosePinonStyle = ->
 	$("#new_moto_op_1").click ->
