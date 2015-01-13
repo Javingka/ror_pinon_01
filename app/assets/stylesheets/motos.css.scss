@@ -23,9 +23,26 @@ $width_logo: 30px;
 }	
 
 .button_left{
-	position:absolute;
-	width:20%;
-	z-index:10;
+	position:relative;
+	float: left;
+	width:15%;
+	margin-top:42.5%;
+	z-index:2;
+}
+.button_right{
+	position:relative;
+	float: right;
+	width:15%;
+	margin-top:42.5%;
+	z-index:2;
+}
+
+/* Formulario que hace visible solo el boton de 'submit' */
+#form_a_new_moto, #form_b_new_moto, #form_c_new_moto  {
+	position: relative;
+	display: block;
+	z-index:3;
+	margin-top: 90%;
 }
 /* boton para enviar el formulario de nueva moto */
 .form_submit{

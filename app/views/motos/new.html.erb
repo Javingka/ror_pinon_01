@@ -2,21 +2,24 @@
 <h1 class="titulo_visible_app"> Elije una base para partir </h1>
 
 <section class="contendor_canvas_clicables">
-	<div style="margin-left:15%"  class="canvas-wrap canvas-wrap-20">
-		<img class="button_left" src="../assets/flecha_iz.svg">
-		<canvas id="new_moto_op_1" class="canvas_opcion_nueva_moto"></canvas>
+	<div style="margin-left:15%"  class="canvas-wrap-20">
+		<canvas id="new_moto_op_a" class="canvas_opcion_nueva_moto"></canvas>
+		<img id="button_left_new_moto_a" class="button_left" src="../assets/flecha_iz.svg">
+		<img id="button_right_new_moto_a" class="button_right" src="../assets/flecha_der.svg">
 		<%= render partial: 'form_a_new_moto' %>
 		<p class="texto_cuadro_eleccion_nueva_moto"> Estilos piñon </p>
 	</div>
 
-	<div class="canvas-wrap canvas-wrap-20">
-		<canvas id="new_moto_op_2" class="canvas_opcion_nueva_moto"></canvas>
+	<div class="canvas-wrap-20">
+		<canvas id="new_moto_op_b" class="canvas_opcion_nueva_moto"></canvas>
+		<img id="button_left_new_moto_b" class="button_left" src="../assets/flecha_iz.svg">
+		<img id="button_right_new_moto_b" class="button_right" src="../assets/flecha_der.svg">
 		<%= render partial: 'form_b_new_moto' %>
 		<p class="texto_cuadro_eleccion_nueva_moto"> Paleta de colores </p>
 	</div>
 
-	<div class="canvas-wrap canvas-wrap-20">
-		<canvas id="new_moto_op_3" class="canvas_opcion_nueva_moto"></canvas>
+	<div class="canvas-wrap-20">
+		<canvas id="new_moto_op_c" class="canvas_opcion_nueva_moto"></canvas>
 		<%= render partial: 'form_c_new_moto' %>
 		<p class="texto_cuadro_eleccion_nueva_moto">  Desde cero </p>
 	</div>
